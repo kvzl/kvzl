@@ -19,7 +19,7 @@ resource "about_me" "kvzl" {
   twitter  = "kvzl_"
   location = "Taiwan"
 
-  skill = {
+  skills = {
     "web-dev" = [
       "react",
       "vue",
