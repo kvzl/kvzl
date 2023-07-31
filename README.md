@@ -13,27 +13,18 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-```hcl
-resource "about_me" "kvzl" {
-  name     = "Kevin L"
-  twitter  = "kvzl_"
-  location = "Taiwan"
-
-  skills = {
-    "web-dev" = [
-      "react",
-      "vue",
-      "webpack",
-      "laravel",
-      "nest.js"
-    ]
-
-    "cloud" = [
-      "terraform",
-      "kubernetes",
-      "aws",
-      "gcp"
-    ]
-  }
-}
+```elisp
+(defconst about-me
+  '((id . "kvzl")
+    (name . "Kevin L")
+    (twitter . "kvzl_")
+    (location . "Taiwan")
+    (skills . (("web-dev" . ("React"
+                             "Vue"
+                             "Webpack"
+                             "Laravel"
+                             "Nest.js"))
+               ("infra" . ("Terraform"
+                           "Kubernetes"
+                           "AWS"))))))
 ```
